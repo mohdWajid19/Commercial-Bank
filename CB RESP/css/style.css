@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* main setion holding content */
+.main-content{
+   background-color: rgb(243, 245, 247);
+    min-height: calc(100vh - 22px - 85px);
+    
+  }
+  .welcome-box{
+      padding-top:100px;
+  }
+  .welcome, .subheading, .home-hr{
+      position:relative;
+      margin:20 0 0 0;
+      text-align: center;
+  } 
+
+  .home-hr{
+      width:30vw;
+      opacity:0.7; 
+      margin: 5px 35%;
+  }
+ 
+/* devpic */
+
+
+
+/* tables */ 
+.main{
+    display:flex; 
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+
+}
+h3{
+    font-size:28px;
+    color:#667292;
+    text-shadow: 3px 3px 4px  #c0c3c5;
+}
+.table{
+    width: 60vw;
+    border: 3px groove ;
+    border-radius:5px;
+    padding: 15px;
+    padding-bottom: 25px; 
+    background-color: rgb(238, 247, 255); 
+}
+
+th,td{
+    height:40px;
+    border-right: 1px ridge ;
+    border-bottom: 2px ridge ;
+}
+th{
+    font-size: 22px;
+}
+th:last-child,td:last-child{
+    border-right:none;
+}
+/* website responsive styling  */
+@media (max-width: 1100px) {
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        border: 1px solid #ddd;
+    }
+    .table-responsive>.table {
+        width:500px;
+    }
+    td{
+        font-size:14px;
+    }
+    th{
+        font-size:18px;
+    }
+    h3{
+        font-size:20px;
+    }
+
+}

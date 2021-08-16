@@ -123,6 +123,10 @@ $amount = $_POST["amount"];
 $sender = $_POST["sender"];
 $receiver = $_POST["receiver"];
    // echo"$amount <br> $sender <br> $receiver <br> ";
+    if($sender === $receiver) {
+    echo "<script>alert('both users can't be same');</script>";
+    }
+    else {
         $query1 = "SELECT bankBalance FROM users where sno=$sender";
         $query2 = "SELECT bankBalance FROM users where sno=$receiver";
         $data = mysqli_query($conn,$query1);
@@ -173,5 +177,6 @@ $receiver = $_POST["receiver"];
         }
         
         }
+    }
     }
 ?>
